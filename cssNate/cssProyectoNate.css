@@ -1,0 +1,93 @@
+/*CSS general de elementos*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: #181b1f;
+    font-family: "PT Sans", sans-serif;
+    max-width: 1400px;
+}
+
+section {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+section h3{
+    font-size: 26px;
+}
+
+/*CSS Navegación*/
+#navegador {
+    background-color: #4b5359;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+#navegador li {
+    padding: 10px;
+}
+
+#navegador li a {
+    font-size: 18px;
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+#navegador li a:hover {
+    color: #d3f91e;
+    border-bottom: 1px solid #d3f91e;
+    transition: all 0.5s;
+}
+
+#navegador li#Logo a:hover{
+    border-bottom: 0;
+}
+
+/*CSS Presentación*/
+
+
+
+#introduccion h1 {
+    font-size: 46px;
+    color: white;
+}
+
+#introduccion h2 {
+    color: #d3f91e;
+    font-style: italic;
+}
+
+#FotoPerfil {
+    border: solid 2px;
+    border-color: white;
+}
+
+/*CSS Youtube*/
+
+#Youtube{
+    background-color: #d3f91e;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#videos{
+    display: flex;
+    justify-content: center;
+}
+
+#videos iframe{
+    margin: 40px;
+    height: 200px;
+    border-radius: 10px;
+}
