@@ -5,10 +5,15 @@
     padding: 0px;
 }
 
+html{
+    scroll-behavior: smooth !important;
+}
+
 body {
     background-color: #181b1f;
     font-family: "PT Sans", sans-serif;
     max-width: 1400px;
+    scroll-behavior: smooth;
 }
 
 section {
@@ -24,7 +29,7 @@ section h3 {
     font-size: 26px;
 }
 
-main{
+main {
     padding-top: 100px;
 }
 
@@ -62,8 +67,6 @@ main{
 
 /*CSS Presentación*/
 
-
-
 #introduccion h1 {
     font-size: 46px;
     color: white;
@@ -77,6 +80,30 @@ main{
 #FotoPerfil {
     border: solid 2px;
     border-color: white;
+}
+
+#logoLink,
+#logoTwitter,
+#logoInsta,
+#logoSpoty {
+    float: left;
+    margin-right: 15px;
+    color: #d3f91e;
+    transition: all 0.2s;
+}
+
+#redes{
+   list-style: none;
+    font-size: 24px;
+    padding-top: 20px; 
+}
+
+#logoLink:hover,
+#logoTwitter:hover,
+#logoInsta:hover,
+#logoSpoty:hover {
+    color: white;
+    transition: all 0.5;
 }
 
 /*CSS Youtube*/
@@ -100,43 +127,43 @@ main{
 
 /*CSS Sobre Mi*/
 
-#textVideo{
+#textVideo {
     display: flex;
     padding-top: 35px;
     align-items: center;
     text-align: justify;
 }
 
-#H3SobreMi{
+#H3SobreMi {
     color: white;
 }
 
-#SobreMi{
+#SobreMi {
     padding-left: 25px;
     padding-right: 25px;
     flex-direction: column;
 }
 
-#textSobreMi p{
+#textSobreMi p {
     color: white;
 }
 
 /*CSS MasterMind*/
 
-#MasterMind{
+#MasterMind {
     background-color: #ed40da;
     flex-direction: column;
 }
 
-#logoMasterMind{
+#logoMasterMind {
     height: 100px;
 }
 
-#infoMasterMind{
+#infoMasterMind {
     display: flex;
 }
 
-.cardMasterMind{
+.cardMasterMind {
     background-color: #181b1f;
     color: white;
     margin: 20px;
@@ -146,8 +173,72 @@ main{
     text-align: center;
     width: 250px;
     height: 300px;
-    
+
 }
-.cardMasterMind p{
+
+.cardMasterMind p {
     margin: 10px;
+}
+
+/*CSS Contactar*/
+
+#Contactar {
+    color: white;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.itemForm {
+    font-weight: 700;
+    display: grid;
+    grid-template-columns: 150px 350px;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.itemForm input,
+.itemForm textarea {
+    border-radius: 5px;
+    border: 1px solid white;
+}
+
+#botonEnviar {
+    align-items: center;
+}
+
+input[type="submit"] {
+    background-color: #181b1f;
+    color: white;
+    padding: 10px;
+    justify-self: end;
+    grid-column: 2/3;
+}
+
+#form {
+    margin-top: 50px;
+}
+
+textarea{
+    color: black;
+}
+
+/*CSS Footer*/
+
+footer {
+    background-color: #4b5359;
+    color: white;
+    font-weight: 1000;
+    text-align: center;
+    padding: 20px;
+}
+
+#Contacto {
+    color: white;
+    text-decoration: none;
+}
+
+#Contacto:hover {
+    color: #d3f91e;
+    border-bottom: 1px solid #d3f91e;
+    transition: all 0.5s;
 }
