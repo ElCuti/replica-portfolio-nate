@@ -20,12 +20,18 @@ section {
     width: 100%;
 }
 
-section h3{
+section h3 {
     font-size: 26px;
+}
+
+main{
+    padding-top: 100px;
 }
 
 /*CSS Navegación*/
 #navegador {
+    position: fixed;
+    width: 100%;
     background-color: #4b5359;
     display: flex;
     align-items: center;
@@ -50,7 +56,7 @@ section h3{
     transition: all 0.5s;
 }
 
-#navegador li#Logo a:hover{
+#navegador li#Logo a:hover {
     border-bottom: 0;
 }
 
@@ -75,19 +81,73 @@ section h3{
 
 /*CSS Youtube*/
 
-#Youtube{
+#Youtube {
     background-color: #d3f91e;
     justify-content: center;
     flex-direction: column;
 }
 
-#videos{
+.videos {
     display: flex;
     justify-content: center;
 }
 
-#videos iframe{
+.videos iframe {
     margin: 40px;
     height: 200px;
     border-radius: 10px;
+}
+
+/*CSS Sobre Mi*/
+
+#textVideo{
+    display: flex;
+    padding-top: 35px;
+    align-items: center;
+    text-align: justify;
+}
+
+#H3SobreMi{
+    color: white;
+}
+
+#SobreMi{
+    padding-left: 25px;
+    padding-right: 25px;
+    flex-direction: column;
+}
+
+#textSobreMi p{
+    color: white;
+}
+
+/*CSS MasterMind*/
+
+#MasterMind{
+    background-color: #ed40da;
+    flex-direction: column;
+}
+
+#logoMasterMind{
+    height: 100px;
+}
+
+#infoMasterMind{
+    display: flex;
+}
+
+.cardMasterMind{
+    background-color: #181b1f;
+    color: white;
+    margin: 20px;
+    margin-top: 5px;
+    border: solid 2px;
+    border-color: white;
+    text-align: center;
+    width: 250px;
+    height: 300px;
+    
+}
+.cardMasterMind p{
+    margin: 10px;
 }
